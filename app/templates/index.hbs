@@ -1,0 +1,11 @@
+<h1>BUSTLE</h1>
+
+<ul class="list-unstyled">
+  {{#each model as |story|}}
+    <h2>{{story.headline}}</h2>
+      <ul class="list-unstyled">
+        <p><img src={{story.photo}}></p>
+        <p>By: {{story.author}}</p>
+      </ul>
+  {{/each}}
+</ul>

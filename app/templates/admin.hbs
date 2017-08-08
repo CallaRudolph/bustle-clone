@@ -1,0 +1,17 @@
+<div class="container">
+
+  <ul class="list-unstyled">
+    {{#each model as |story|}}
+      <h2 id="headline">{{story.headline}}</h2>
+        <ul class="list-unstyled">
+          <p>{{#link-to 'admin-story' story.id}}<img src={{story.photo}}>{{/link-to}}</p>
+          <!-- {{update-story story=model update="update"}}
+          {{delete-story story=model destroyStory="destroyStory"}} -->
+        </ul>
+    {{/each}}
+  </ul>
+
+  <h2>{{#link-to 'index'}}Home{{/link-to}}</h2>
+</div>
+
+{{new-story saveStory="saveStory"}}

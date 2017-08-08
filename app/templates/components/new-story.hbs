@@ -1,4 +1,5 @@
 {{#if addNewStory}}
+<div class="container">
   <h3>Create a new story</h3>
   <div>
     <form>
@@ -21,6 +22,9 @@
       <button {{action 'saveStory'}}>Save</button>
     </form>
   </div>
+</div>
 {{else}}
-  <button {{action 'storyFormShow'}} class="btn-success">New Story</button>
+<div class="well">
+  <button {{action 'storyFormShow'}}>New Story</button>
+</div>
 {{/if}}

@@ -17,7 +17,7 @@ export default Ember.Route.extend({
         }
       });
       story.save();
-      this.transitionTo('index');
+      this.transitionTo('admin');
     },
     destroyStory(story) {
       story.destroyRecord();

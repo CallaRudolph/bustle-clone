@@ -5,11 +5,6 @@ export default Ember.Route.extend({
     return this.store.findRecord('story', params.story_id);
   },
   actions: {
-    saveStory(params) {
-      var newStory = this.store.createRecord('story', params);
-      newStory.save();
-      this.transitionTo('index');
-    },
     update(story, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {

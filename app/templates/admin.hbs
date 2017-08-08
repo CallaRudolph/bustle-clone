@@ -1,8 +1,8 @@
 <div class="container">
-  <h2>WELCOME ADMIN</h2>
-  <ul class="list-unstyled">
+  <h2 id="admin">WELCOME ADMIN</h2>
+  <ul class="list-unstyled" id="main">
     {{#each model as |story|}}
-      <h2 id="headline">{{story.headline}}</h2>
+      <h2 class="well" id="headline">{{story.headline}}</h2>
         <ul class="list-unstyled">
           <p>{{#link-to 'admin-story' story.id}}<img src={{story.photo}}>{{/link-to}}</p>
           <!-- {{update-story story=story update="update"}} -->

@@ -1,7 +1,7 @@
 
-<ul class="list-unstyled">
+<ul class="list-unstyled" id="main">
   {{#each model as |story|}}
-    <h2 id="headline">{{#link-to 'story' story.id}}{{story.headline}}{{/link-to}}</h2>
+    <h2 class="well" id="headline">{{#link-to 'story' story.id}}{{story.headline}}{{/link-to}}</h2>
       <ul class="list-unstyled">
         <p>{{#link-to 'story' story.id}}<img src={{story.photo}}>{{/link-to}}</p>
       </ul>

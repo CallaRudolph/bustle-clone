@@ -8,6 +8,46 @@
   height: 100px;
 }
 
+#sponsor {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: 10%;
+  top: 1%;
+}
+
+#facebook {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 16%;
+  top: 5%;
+}
+
+#twitter {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 13%;
+  top: 5%;
+}
+
+#pinterest {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+
+#instagram {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 7%;
+  top: 5%;
+}
+
 body {
   background-color: grey;
 }
@@ -20,14 +60,21 @@ img {
   height: 400px;
   width: 400px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 50%;
 }
 
 #headline {
+  color: cyan;
   text-align: center;
-  padding: 1px;
+  width: 500px;
+  display: block;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: .80;
+  background-color: white;
 }
 
 h2{
@@ -43,4 +90,17 @@ button {
   margin-left: auto;
   margin-right: auto;
   background-color: cyan;
+}
+
+#footer {
+  color: white;
+  background-color: #474A48;
+}
+
+#main {
+  padding: 4px;
+}
+
+#admin {
+  color: #9ae19d;
 }

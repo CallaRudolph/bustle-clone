@@ -8,10 +8,10 @@ export default Ember.Component.extend({
     },
     saveStory() {
       var params = {
-        headline: this.get('headline'),
-        photo: this.get('photo'),
-        author: this.get('author'),
-        article: this.get('article'),
+        headline: this.get('headline') ? this.get('headline') : "",
+        photo: this.get('photo') ? this.get('photo') : "",
+        author: this.get('author') ? this.get('author') : "",
+        article: this.get('article') ? this.get('article') : "",
       };
       this.set('addNewStory', false);
       this.sendAction('saveStory', params);

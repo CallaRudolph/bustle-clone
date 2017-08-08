@@ -1,11 +1,9 @@
-<h1>BUSTLE</h1>
 
 <ul class="list-unstyled">
   {{#each model as |story|}}
-    <h2>{{#link-to 'story' story.id}}{{story.headline}}{{/link-to}}</h2>
+    <h2 id="headline">{{#link-to 'story' story.id}}{{story.headline}}{{/link-to}}</h2>
       <ul class="list-unstyled">
-        <p><img src={{story.photo}}></p>
-        <p>By: {{story.author}}</p>
+        <p>{{#link-to 'story' story.id}}<img src={{story.photo}}>{{/link-to}}</p>
       </ul>
   {{/each}}
 

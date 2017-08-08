@@ -11,7 +11,7 @@ export default Ember.Component.extend({
         headline: this.get('headline'),
         photo: this.get('photo'),
         author: this.get('author'),
-        story: this.get('story'),
+        article: this.get('article'),
       };
       this.set('updateStoryForm', false);
       this.sendAction('update', story, params);
